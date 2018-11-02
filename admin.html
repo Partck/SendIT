@@ -2,17 +2,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>SendIT</title>
+    <title>SendIT|Admin</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
      <link rel="stylesheet" href="style.css">
+
     
 
 </head>
 <body>
     <div class="nav">
-        <a class="active" href="index.html">SendIT</a>
-        <a class="signup" href="login.html">Login/SignUp</a>
+       <div class="dropdown">
+            <span href="index.html">SendIT</span>
+            <div class="dropdown-content">
+        <a class="active" href="index.html">Home</a>
+        <a class="active" href="admin.html">Admin</a>
+        </div>
+
+        </div>
+
     </div>
 
     <div class="row">
@@ -47,8 +55,14 @@
                 <option value="Kisumu">Kisumu</option>
                 </select>
 
+               
                 <label for="parcel_weight">Weight</label>
-                <input type="text" id="parcel_weight" name="parcel_weight" placeholder="Weight..">
+                <select id="parcel_weight" name="parcel_weight">
+                <option value="less_one"> < 1 kg </option>
+                <option value="one_five">1-5 kgs</option>
+                <option value="five_ten">5-10 kgs</option>
+                <option value="over_ten"> 10 > kgs</option>
+                </select>
 
                 <label for="status">Status</label>
                 <input type="text" id="status" name="status" placeholder="Status..">
