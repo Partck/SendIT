@@ -2,17 +2,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>SendIT</title>
+    <title>SendIT Home</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
      <link rel="stylesheet" href="style.css">
     
-
 </head>
 <body>
     <div class="nav">
-        <a class="active" href="index.html">SendIT</a>
+
+
+        <div class="dropdown">
+            <span href="index.html">SendIT</span>
+            <div class="dropdown-content">
+        <a class="active" href="index.html">Home</a>
+        <a class="active" href="admin.html">Admin</a>
+        </div>
+
+        </div>
         <a class="signup" href="login.html">Login/SignUp</a>
+
+       
     </div>
 
     <div class="row">
@@ -39,7 +49,16 @@
                 </select>
 
                 <label for="parcel_weight">Weight</label>
-                <input type="text" id="parcel_weight" name="parcel_weight" placeholder="Weight..">
+                <select id="parcel_weight" name="parcel_weight">
+                <option value="less_one"> < 1 kg </option>
+                <option value="one_five">1-5 kgs</option>
+                <option value="five_ten">5-10 kgs</option>
+                <option value="over_ten"> 10 > kgs</option>
+                </select>
+
+                <label for="price">Price</label>
+                <input type="text" id="price" name="price" placeholder="Sending price..">
+
                 <button type="submit" value="Submit"> Submit</button>
             </form>
         </div>
@@ -58,7 +77,8 @@
     <td>Nairobi</td>
     <td>Thika</td>
     <td>8kgs</td>
-    <td style = "color: blue, font-style: italic" id="myBtn">Edit</td>
+    <td style = "color: blue, font-style: italic" id="myBtn">
+    <i class="far fa-cog">Edit</i></td>
   </tr>
 
   <tr>
