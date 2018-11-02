@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SendIT Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="nav">
+
+
+        <div class="dropdown">
+            <span href="index.html">SendIT</span>
+            <div class="dropdown-content">
+        <a class="active" href="index.html">Home</a>
+        <a class="active" href="admin.html">Admin</a>
+        </div>
+
+        </div>
+        <a class="signup" href="login.html">Login/SignUp</a>
+
+       
+    </div>
+
+    <div class="row">
+        <div class="column" >
+            <form action="">
+                <legend>Make an order</legend>
+                <label for="parcel_description">Parcel Description</label>
+                <input type="text" id="parcel_description" name="parcel_description" placeholder="Parcel description..">
+
+
+                <label for="location">Pickup Location</label>
+                <select id="location" name="location">
+                <option value="Nairobi">Nairobi</option>
+                <option value="Mombasa">Mombasa</option>
+                <option value="Kisumu">Kisumu</option>
+                </select>
+
+
+                <label for="destination">Destination</label>
+                <select id="destination" name="destination">
+                <option value="Nairobi">Nairobi</option>
+                <option value="Mombasa">Mombasa</option>
+                <option value="Kisumu">Kisumu</option>
+                </select>
+
+                <label for="parcel_weight">Weight</label>
+                <select id="parcel_weight" name="parcel_weight">
+                <option value="less_one"> < 1 kg </option>
+                <option value="one_five">1-5 kgs</option>
+                <option value="five_ten">5-10 kgs</option>
+                <option value="over_ten"> 10 > kgs</option>
+                </select>
+
+                <label for="price">Price</label>
+                <input type="text" id="price" name="price" placeholder="Sending price..">
+
+                <button type="submit" value="Submit"> Submit</button>
+            </form>
+        </div>
+        <div class="column" >
+            <legend>Pending orders</legend>
+               <table id="detail_table">
+  <tr>
+    <th>Parcel Description</th>
+    <th>Pickup location</th>
+    <th>Destination</th>
+    <th>Weight</th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>Black suit case</td>
+    <td>Nairobi</td>
+    <td>Thika</td>
+    <td>8kgs</td>
+    <td style = "color: blue, font-style: italic" id="myBtn">
+    <i class="far fa-cog">Edit</i></td>
+  </tr>
+
+  <tr>
+    <td>Black suit case</td>
+    <td>Nairobi</td>
+    <td>Thika</td>
+    <td>8kgs</td>
+    <td style = "color: blue, font-style: italic" id="myBtn">Edit</td>
+  </tr>
+
+  <tr>
+    <td>Black suit case</td>
+    <td>Nairobi</td>
+    <td>Thika</td>
+    <td>8kgs</td>
+    <td style = "color: blue, font-style: italic" id="myBtn">Edit</td>
+  </tr>
+  
+</table>
+
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+            <span class="close">&times;</span>
+
+                <div>
+                    <form action="">
+
+                        <legend>Edit</legend>
+                        <label for="destination">Destination</label>
+                        <select id="destination" name="destination">
+                        <option value="Nairobi">Nairobi</option>
+                        <option value="Mombasa">Mombasa</option>
+                        <option value="Kisumu">Kisumu</option>
+                        </select>    
+                        <button type="submit" value="Submit"> Submit</button>
+                        <button class="cancelbtn">Cancel Order</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div> 
+
+        </div>
+        <div class="column" > <legend>Order History</legend>
+               <table id="detail_table">
+  <tr>
+    <th>Parcel Description</th>
+    <th>Pickup location</th>
+    <th>Destination</th>
+    <th>Weight</th>
+  </tr>
+  <tr>
+    <td>Black suit case</td>
+    <td>Nairobi</td>
+    <td>Thika</td>
+    <td>8kgs</td>
+    </tr>
+
+  <tr>
+    <td>Black suit case</td>
+    <td>Nairobi</td>
+    <td>Thika</td>
+    <td>8kgs</td>
+   </tr>
+
+  <tr>
+    <td>Black suit case</td>
+    <td>Nairobi</td>
+    <td>Thika</td>
+    <td>8kgs</td>
+</tr>
+  
+</table>
+</div>
+    </div> 
+
+    <div class="footer">
+        <div>
+            <strong>Copyright</strong>. Partck &copy;
+        </div>
+    </div>
+    <script type="text/javascript" src="code.js"></script>
+
+</body>
+</html>
+
+
